@@ -18,10 +18,11 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
   </head>
   <body>
 
-    <div class="top-wrap">
+    <!-- <div class="top-wrap">
       <div class="container">
         <div class="row">
           <div class="col-md d-flex align-items-center mb-2 mb-md-0">
@@ -71,14 +72,45 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Dental Wealth Partners</h1>
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Wealth Management</a></li>
+                <li><a href="#">Tax Strategy</a></li>
+                <li><a href="#">Lifestyle Design</a></li>
+                <li><a href="#">Business Efficiency</a></li>
+                <li><a href="#">Strategic Advisory</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+        <a class="cta-btn" href="index.html#about">Schedule a Call</a>
+  
+      </div>
+    </header>
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 text-center mb-5">
-            <p class="breadcrumbs"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
+            <!-- <p class="breadcrumbs"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p> -->
             <h1 class="mb-0 bread">About Us</h1>
           </div>
         </div>
