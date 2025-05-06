@@ -71,18 +71,13 @@
     }
   }
   
-  .scrolled .header {
-    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-  
-  }
   
   /* Global Header on Scroll
   ------------------------------*/
-  .scrolled .header {
-    /* background-color: #f8f9fa !important; */
-    --background-color: rgba(21, 34, 43, 0.85) !important;
-    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  .header.scrolled {
+    background-color: rgba(33, 37, 41, 0.85) !important;
   }
+  
 
   .header {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
