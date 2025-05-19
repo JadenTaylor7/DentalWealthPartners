@@ -359,4 +359,27 @@
       display: block;
     }
   }
+
+
+
+
+
+  /*--------------------------------------------------------------
+  # Additional tweaks
+  --------------------------------------------------------------*/
+.shift-up {
+  margin-top: -2.3rem;
+}
   
+.square-btn {
+  min-width: 170px;
+  border-radius: 7px !important;
+  text-align: center;
+  font-size: 17px;
+}
+
+.footer-logo {
+  max-height: 60px;
+  max-width: auto;
+  margin: 10px;
+}
