@@ -361,6 +361,28 @@
   }
 
 
+  /*--------------------------------------------------------------
+  # Carosel extra features
+  --------------------------------------------------------------*/
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 5px;
+}
+.carousel-prev { 
+  left: 10px; 
+}
+.carousel-next { 
+  right: 10px; 
+}
 
 
 
@@ -383,3 +405,12 @@
   max-width: auto;
   margin: 10px;
 }
+
+.profile-size {
+  width: 80px;
+  height: 80px;
+  /* background-color: #f8f9fa; */
+  border-radius: 50%;
+  font-size: 56px;
+}
+
