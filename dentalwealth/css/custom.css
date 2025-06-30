@@ -15,7 +15,7 @@
     --heading-color: #ffffff;
     color: var(--default-color);
     background-color: var(--background-color);
-    padding: 5px 0;
+    padding: 15px 0;
     transition: all 0.5s;
     z-index: 997;
   }
@@ -37,8 +37,8 @@
   }
 
   .logo {
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 80px;
+    min-height: 80px;
   }
   
   .header .cta-btn,
