@@ -496,7 +496,8 @@ if(!("remove" in Element.prototype)){
 
 var tns = function(options) {
   options = extend({
-    container: '.slider',
+    // container: '.slider',
+    container: '.carousel-testimony',
     mode: 'carousel',
     axis: 'horizontal',
     items: 1,
@@ -532,7 +533,8 @@ var tns = function(options) {
     animateOut: 'tns-fadeOut',
     animateNormal: 'tns-normal',
     animateDelay: false,
-    loop: true,
+    // loop: true,
+    loop: false, //custom change made
     rewind: false,
     autoHeight: false,
     responsive: false,
