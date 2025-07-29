@@ -47,6 +47,25 @@ var slider = tns({
 
 
 //Link carousel manual nav buttons
+function toggleCarouselButtons() {
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  
+
+  if (window.innerWidth >= 992) { //hide the arrow buttons if all three services are showing 
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'none';
+  } else {
+    prevBtn.style.display = 'block';
+    nextBtn.style.display = 'block';
+  }
+}
+
+window.addEventListener('load', toggleCarouselButtons);
+window.addEventListener('resize', toggleCarouselButtons);
+
+
+
 document.querySelector('.carousel-prev').addEventListener('click', function () {
   slider.goTo('prev');
 });
@@ -54,7 +73,6 @@ document.querySelector('.carousel-prev').addEventListener('click', function () {
 document.querySelector('.carousel-next').addEventListener('click', function () {
   slider.goTo('next');
 });
-
 
 
 
