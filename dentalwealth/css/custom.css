@@ -1,14 +1,26 @@
 
 
 /*--------------------------------------------------------------
-# Global Header
+# Main Colors
 --------------------------------------------------------------*/
+
 :root {
-  --nav-dropdown-color: #212529; /* dark gray/black for visibility */
-  --nav-dropdown-hover-color: #007bff; /* Bootstrap blue or any other shade you like */
+  --nav-dropdown-color: #0a234b; /* Navy Blue for visibility */
+  --main-color: #0a234b;
+  --nav-dropdown-hover-color: #007bff; /* Could change this to gold if we want */
+  --contrast-color: #fdc710;
+  --accent-color: #007bff;
+  --white-color: white;
+}
+
+.mainColor {
+  color: var(--main-color);
 }
 
 
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
 .header {
     --background-color: rgba(0, 0, 0, 0);
     --default-color: #ffffff;
@@ -43,21 +55,22 @@
   
   .header .cta-btn,
   .header .cta-btn:focus {
-    color: var(--contrast-color);
+    color: var(--accent-color) !important;
     font-size: 13px;
     padding: 7px 25px;
     margin: 0 0 0 30px;
     border-radius: 4px;
     transition: 0.3s;
     text-transform: uppercase;
-    border: 2px solid var(--contrast-color);
+    border-color: none !important;
+    border: 3px solid !important;
   }
   
   .header .cta-btn:hover,
   .header .cta-btn:focus:hover {
-    color: var(--contrast-color);
-    background: var(--accent-color);
-    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+    /* background: var(--accent-color); */
+    border-color: var(--contrast-color) !important;
   }
   
   @media (max-width: 1200px) {
@@ -80,10 +93,9 @@
   /* Global Header on Scroll
   ------------------------------*/
   .header.scrolled {
-    background-color: rgba(33, 37, 41, 0.85) !important;
+    background-color: #0a234b !important;
   }
   
-
   .header {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
@@ -127,7 +139,7 @@
     .navmenu a,
     .navmenu a:focus {
       color: var(--nav-color);
-      font-size: 13px;
+      font-size: 14px;
       padding: 0 2px;
       font-family: var(--nav-font);
       font-weight: 500;
@@ -154,7 +166,7 @@
       height: 2px;
       bottom: -6px;
       left: 0;
-      background-color: var(--nav-hover-color);
+      background-color: var(--contrast-color); /*cool gold underline effect*/
       visibility: hidden;
       width: 0px;
       transition: all 0.3s ease-in-out 0s;
@@ -166,12 +178,12 @@
       visibility: visible;
       width: 100%;
     }
-  
-    .navmenu li:hover>a,
+    .navmenu > ul > li > a,
     .navmenu .active,
     .navmenu .active:focus {
-      color: color-mix(in srgb, var(--nav-color) 90%, white 15%);
+      color: var(--white-color) !important;
     }
+
   
     .navmenu .dropdown ul {
       margin: 0;
@@ -229,12 +241,6 @@
       left: -100%;
       visibility: visible;
     }
-  }
-  
-  .navmenu li:hover > a,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: #007bff; /* Bootstrap blue or replace with your custom blue */
   }
   
   
@@ -391,11 +397,81 @@
 
 
 
+
+  /*--------------------------------------------------------------
+  # Button Changes
+  --------------------------------------------------------------*/
+.btn.btn-primary {
+  background-color: var(--main-color) !important;
+  border: 4px solid !important;
+}
+.btn.btn-primary:hover {
+  border: 4px solid var(--contrast-color) !important; 
+}
+
+.item {
+  transition: 0.4s;
+}
+.item:hover {
+  transition: 0.4s;
+  transform: scale(1.05); 
+}
+
+a { /*manage color of all links */
+  text-decoration: none !important;
+  color: black !important;
+}
+a:hover {
+  color: var(--accent-color) !important;
+}
+.start-white a{
+  color: var(--white-color) !important;
+  
+}
+.start-white a:hover{
+  color: var(--accent-color) !important;
+}
+
+
+/*---------------Change borders to all white buttons-------------*/
+.btn.btn-white {
+  border: 3px solid var(--accent-color) !important; 
+}
+
+.btn.btn-white:hover {
+  border: 3px solid var(--contrast-color) !important;
+}
+
+
+
+
+  /*--------------------------------------------------------------
+  # Team Member Changes
+  --------------------------------------------------------------*/
+.ftco-social li a { /*override link color change to keep white*/
+  color: var(--white-color) !important;
+}
+.ftco-social li a:hover {
+  background: gold !important; 
+  transform: scale(1.2); /*zoom effect*/
+}
+
+
+
+
+
+
+
+
   /*--------------------------------------------------------------
   # Additional tweaks
   --------------------------------------------------------------*/
 .shift-up {
   margin-top: -2.3rem;
+}
+
+.shift-down {
+  margin-top: 20px;
 }
   
 .square-btn {
@@ -418,4 +494,7 @@
   border-radius: 50%;
   font-size: 56px;
 }
+
+
+
 
