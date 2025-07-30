@@ -398,6 +398,138 @@
 
 
 
+
+  /*--------------------------------------------------------------
+  # Picture Slider
+  --------------------------------------------------------------*/
+.slider-wrapper,
+.slides {
+  height: 80vh;
+}
+
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+
+
+.slide-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+input[type=radio] {
+  display: none;
+}
+
+/* Show slides based on radio selection */
+#img-addison-1:checked ~ .slider-wrapper .slides li:nth-child(1),
+#img-addison-2:checked ~ .slider-wrapper .slides li:nth-child(2) {
+  display: block;
+  position: relative;
+}
+#img-addison-1:checked ~ .slider-wrapper .slides li:nth-child(1),
+#img-addison-2:checked ~ .slider-wrapper .slides li:nth-child(2) {
+  display: block;
+  position: relative;
+}
+#img-jameson-1:checked ~ .slider-wrapper .slides li:nth-child(1),
+#img-jameson-2:checked ~ .slider-wrapper .slides li:nth-child(2) {
+  display: block;
+  position: relative;
+}
+
+/* Image styling */
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Navigation arrows */
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav label {
+  width: 40px;
+  height: 40px;
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  border: 2px solid var(--white-color);
+}
+
+.nav label:hover {
+  background-color: var(--main-color);
+  border: 2px solid var(--contrast-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+
+
+/* Navigation dots */
+.nav-dots {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.nav-dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#img-addison-1:checked ~ .slider-wrapper .nav-dots #img-dot-addison-1,
+#img-addison-2:checked ~ .slider-wrapper .nav-dots #img-dot-addison-2 {
+  background-color: #4f86f9;
+}
+#img-jameson-1:checked ~ .slider-wrapper .nav-dots #img-dot-jameson-1,
+#img-jameson-2:checked ~ .slider-wrapper .nav-dots #img-dot-jameson-2 {
+  background-color: #4f86f9;
+}
+
+
+
+
+
+
+
   /*--------------------------------------------------------------
   # Button Changes
   --------------------------------------------------------------*/
@@ -457,8 +589,13 @@ a:hover {
 }
 
 
-
-
+  /*--------------------------------------------------------------
+  # About Picture adjustments
+  --------------------------------------------------------------*/
+.w-100 {
+  max-height: 90%;
+  background-position: top; /*anchor top of picture so no cropped head*/
+}
 
 
 
