@@ -14,12 +14,12 @@ Light Blue Background:
 • HEX#: #007bff
 
 Cream Background (might change this to just white):
-• RGB: rgb(247, 243, 232)
+• RGB: rgb(213, 172, 26)
 • HEX#: #f7f3e8
 
 Gold Highlights:
 • RGB: rgb(253, 199, 16)
-• HEX#: #fdc710
+• HEX#: #d5ac1a
 
 Fonts:
 Times (Regular)
