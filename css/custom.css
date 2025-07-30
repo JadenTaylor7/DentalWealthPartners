@@ -8,7 +8,8 @@
   --nav-dropdown-color: #0a234b; /* Navy Blue for visibility */
   --main-color: #0a234b;
   --nav-dropdown-hover-color: #007bff; /* Could change this to gold if we want */
-  --contrast-color: #fdc710;
+  /* --contrast-color: #fdc710; */
+   --contrast-color: #d5ac1a;
   --accent-color: #007bff;
   --white-color: white;
 }
