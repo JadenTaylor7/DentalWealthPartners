@@ -527,6 +527,55 @@ input[type=radio] {
 
 
 
+  /*--------------------------------------------------------------
+  # Testimony Wrap
+  --------------------------------------------------------------*/
+.testimony-wrap-two {
+  background: transparent;
+  background: rgba(255, 255, 255, 0.05); /*faint shade over*/
+  color: var(--white-color)
+}
+
+.testimony-wrap-two .position {
+  color: white;
+}
+
+.tns-slider {
+  transition-timing-function: linear !important;
+}
+
+.testimony-wrap-two { /*I know it's wierd, but this is to make sure they are all the same height */
+  min-height: 222px; 
+  margin: 5px;
+}
+
+
+.tns-controls button {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: 2px solid var(--contrast-color);
+  border-radius: 50%;
+  width: 80px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tns-controls button:hover {
+  background-color: var(--contrast-color);
+  color: var(--main-color);
+  transform: scale(1.1);
+}
+
+.tns-controls {
+  text-align: center;
+  margin-bottom: 30px; /* or margin-top if placed above */
+}
+
+
 
 
 
