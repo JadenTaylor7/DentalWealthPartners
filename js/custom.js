@@ -79,3 +79,28 @@ document.querySelector('.carousel-next').addEventListener('click', function () {
 
 
 
+/*--------------------------------------------------------------
+# Testimony section (second carousel)
+--------------------------------------------------------------*/
+tns({
+  container: '.carousel-testimony-two',
+  items: 3,
+  slideBy: 1,
+  autoplay: false,
+  controls: true,
+  nav: false,
+  loop: true,
+  mouseDrag: true,
+  touch: true,
+  responsive: {
+    0: { items: 1 },
+    768: { items: 2 },
+    992: { items: 3 }
+  }
+});
+
+
+
+
+
+
