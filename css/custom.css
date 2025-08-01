@@ -397,6 +397,12 @@
 
 
 
+.testimony-link .text:hover {
+  color: black !important; /*TODO: can't figure out how to not turn blue when hovering over testimony-wrap without affecting color of  testimonials*/
+}
+
+
+
 
 
   /*--------------------------------------------------------------
@@ -528,7 +534,7 @@ input[type=radio] {
 
 
   /*--------------------------------------------------------------
-  # Testimony Wrap
+  # Testimony Wrap (index.html)
   --------------------------------------------------------------*/
 .testimony-wrap-two {
   background: transparent;
@@ -575,7 +581,10 @@ input[type=radio] {
   margin-bottom: 30px; /* or margin-top if placed above */
 }
 
-
+.w-100 {
+  max-height: 90%;
+  background-position: top; /*anchor top of picture so no cropped head*/
+}
 
 
 
@@ -638,13 +647,7 @@ a:hover {
 }
 
 
-  /*--------------------------------------------------------------
-  # About Picture adjustments
-  --------------------------------------------------------------*/
-.w-100 {
-  max-height: 90%;
-  background-position: top; /*anchor top of picture so no cropped head*/
-}
+
 
 
 
@@ -687,4 +690,9 @@ a:hover {
 }
 
 
+
+.stacked-badge-list {
+  list-style: none;
+  padding-left: 0;
+}
 

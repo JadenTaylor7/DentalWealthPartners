@@ -14,8 +14,8 @@ Light Blue Background:
 • HEX#: #007bff
 
 Cream Background (might change this to just white):
-• RGB: rgb(213, 172, 26)
-• HEX#: #f7f3e8
+• RGB: rgb(247, 243, 232)
+• HEX#: #f7f3e8ff
 
 Gold Highlights:
 • RGB: rgb(253, 199, 16)
