@@ -371,6 +371,29 @@
     }
   }
 
+.navmenu .dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* space between text and caret */
+}
+
+
+  /* Carrot dropdown */
+@media (min-width:1200px){
+  .navmenu .dropdown > a{
+    display:flex; align-items:center; gap:5px; position:relative;
+  }
+  .navmenu .dropdown > a::after{
+    content:""; width:0; height:0;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:6px solid var(--white-color); /* caret color */
+    transition:transform .25s ease;
+    transform:translateY(2px);
+  }
+  .navmenu .dropdown:hover > a::after{ transform:translateY(2px) rotate(180deg); }
+}
+
 
   /*--------------------------------------------------------------
   # Carosel extra features
@@ -695,4 +718,5 @@ a:hover {
   list-style: none;
   padding-left: 0;
 }
+
 
